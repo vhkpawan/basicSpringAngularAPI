@@ -1,0 +1,36 @@
+header{
+  display: flex;
+  padding-inline: 16px;
+  padding-block: 8px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 50px;
+  font-family: sans-serif;
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    > span{
+      &:hover {
+        cursor: pointer;
+        color: pink;
+      }
+    }
+
+    ul{
+      list-style: none;
+
+      li{
+        &:hover {
+          cursor: pointer;
+          color: pink;
+        }
+      }
+    }
+  }
+}

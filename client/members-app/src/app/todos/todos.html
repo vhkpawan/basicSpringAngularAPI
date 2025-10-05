@@ -1,0 +1,18 @@
+@for (todo of todoItems(); track todo.email){
+  <p> {{todo.id}}</p>
+  <p> {{todo.firstName}} </p>
+  <p> {{todo.lastName}} </p>
+  <p> {{todo.email}} </p>
+  <p> {{todo.role}} </p>
+  <p> {{todo.phoneNumber}} </p>
+}
+
+
+<form #memberForm="ngForm" (ngSubmit)="getFormData(memberForm)">
+  <input type="text" name="firstName" ngModel placeholder="First Name">
+  <input type="text" name="lastName" ngModel placeholder="Last Name">
+  <input type="text" name="email" ngModel placeholder="Email">
+  <input type="text" name="phoneNumber" ngModel placeholder="Phone Number">
+  <input type="text" name="role" ngModel placeholder="Role ">
+  <button type="submit"> Submit </button>
+</form>
